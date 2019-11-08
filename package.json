@@ -1,0 +1,22 @@
+{
+  "name": "creativeproject4",
+  "version": "1.0.0",
+  "description": "Node Creative Project",
+  "main": "myserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpstrommen95/CreativeProject4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpstrommen95/CreativeProject4/issues"
+  },
+  "homepage": "https://github.com/jpstrommen95/CreativeProject4#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
