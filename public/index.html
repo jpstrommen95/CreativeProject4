@@ -2,11 +2,41 @@
 <html>
 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GW2 Legendaries</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
 
     <body>
-        <p>My Html body</p>
+
+        <div id="root" class="container">
+
+            <h1 class="title">GW2 Legendaries</h1>
+            <div class="box is-warning">
+                <h1 class="subtitle">Top-Rated Legendary</h1>
+            </div>
+            <div class="box">
+                <h1 class="subtitle">List of Legendaries</h1>
+                <p v-if="loading">Loading...</p>
+                <ul v-else>
+                    <legend-info v-for="legend in legends" :legend="legend" :key="legend.id"></legend-info>
+                </ul>
+            </div>
+
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <a href="https://github.com/jpstrommen95/CreativeProject4.git" target="_blank">Creative Project 4 GitHub</a>
+                </div>
+            </footer>
+
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 
 </html>
